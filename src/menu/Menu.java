@@ -25,27 +25,27 @@ public class Menu {
 
                 System.out.println("0.Close application");
 
-                int userInput = scan.nextInt();
+                    int userInput = scan.nextInt();
 
-                if (userInput >= 0 && userInput <= 3) {
+                    if (userInput >= 0 && userInput <= 3) {
 
-                    switch (userInput) {
-                        case 0:
-                            System.out.println("Program Completed, you leave TimeManager.");
-                            return;
-                        case 1:
-                            showViewEventMenu(scan);
-                            break;
-                        case 2:
-                            showEventCreationMenu(scan);
-                            break;
-                        case 3:
-                            showDeleteEventMenu(scan);
-                            break;
+                        switch (userInput) {
+                            case 0:
+                                System.out.println("Program Completed, you leaved TimeManager.");
+                                return;
+                            case 1:
+                                showViewEventMenu(scan);
+                                break;
+                            case 2:
+                                showEventCreationMenu(scan);
+                                break;
+                            case 3:
+                                showDeleteEventMenu(scan);
+                                break;
+                        }
+                    } else {
+                        System.out.println("Input Error, choose right number!");
                     }
-                } else {
-                    System.out.println("Input Error, choose right number!");
-                }
             }
         }catch (Exception e) {
             System.out.println(e.getMessage());
@@ -153,22 +153,22 @@ public class Menu {
 
                 int userInput = scan.nextInt();
 
-                if (userInput >= 0 && userInput <= 2) {
+                    if (userInput >= 0 && userInput <= 2 ) {
 
-                    switch (userInput) {
-                        case 0:
-                            System.out.println("Returning to Main menu completed.");
-                            return;
-                        case 1:
-                            System.out.println("View events");
-                            break;
-                        case 2:
-                            System.out.println("Delete event by id");
-                            break;
+                        switch (userInput) {
+                            case 0:
+                                System.out.println("Returning to Main menu completed.");
+                                return;
+                            case 1:
+                                System.out.println("View events");
+                                break;
+                            case 2:
+                                System.out.println("Delete event by id");
+                                break;
+                        }
+                    } else {
+                        System.out.println("Input Error, choose right number!");
                     }
-                } else {
-                    System.out.println("Input Error, choose right number!");
-                }
             }
         }catch (Exception e) {
             System.out.println(e.getMessage());
